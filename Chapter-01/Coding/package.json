@@ -1,0 +1,23 @@
+{
+  "name": "coding",
+  "version": "1.0.0",
+  "description": "Namaste React",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "y"
+  },
+  "author": "Jitender Malik",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.8.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}

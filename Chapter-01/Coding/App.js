@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM from "react-dom/client" 
+
 // Manipulate the HTML DOM using Javscript
 // const heading = document.createElement("h1");
 // heading.innerHTML = "Namaste Everyone";
