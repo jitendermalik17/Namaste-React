@@ -1,0 +1,110 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 1rem;
+}
+.footer-links{
+    max-width:30rem;
+    display:flex;
+    gap:2rem;
+    padding:2rem;
+    margin-inline: auto;
+}
+
+.footer-container{
+    border-top: 1px solid #ccc;
+    margin:2rem 0 1rem 0;
+}
+
+.logo {
+    margin-left: 20px;
+}
+.log__in{
+    width:150px;
+    align-self: center;
+    border:0px;
+    background:green;
+    color: #fff;
+    padding:1rem 2rem;
+    margin-right: 20px;
+    cursor: pointer;
+    font-size:16px;
+}
+.log__out{
+    align-self: center;
+    border:0px;
+    width:150px;
+    background:red;
+    color: #fff;
+    padding:1rem 2rem;
+    margin-right: 20px;
+    cursor: pointer;
+    font-size:16px;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-right: 20px;
+   
+}
+.nav-items > li {
+    padding: 10px;
+    color: black;
+    font-size:16px;
+}
+.nav-items > li a{
+    text-decoration: none;
+    color:#333;
+    padding:1rem;
+}
+.nav-items > li a.active{
+    background-color:#333;
+    color: #fff;
+}
+.total__count{
+    margin-inline: auto;
+    max-width: 1200px;
+    margin-block-end:2rem;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    }
+    .shimmer{
+    width:1200px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    }
+    .shimmer__card{
+    border: 1px solid #eee;
+    padding:.5rem;
+    flex: 0 0 calc(25% - 1rem);
+    display:flex;
+    flex-direction:column;
+    gap:.5rem;
+    }
+    .shimmer__img {
+    height: 100px;
+    background-color: #eee;
+    }
+    .shimmer-one{
+    height: 10px;
+    max-width: 40%;
+    background-color: #eee;
+    }
+    .shimmer-two{
+    height: 10px;
+    max-width: 80%;
+    background-color: #eee;
+    }
+    .menu{
+        display: flex;
+    }

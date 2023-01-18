@@ -1,0 +1,420 @@
+.header-container {
+  border-bottom: 1px solid #000;
+  border-radius: 5px;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 1rem;
+  display: flex;
+}
+
+.footer-links {
+  max-width: 30rem;
+  gap: 2rem;
+  margin-inline: auto;
+  padding: 2rem;
+  display: flex;
+}
+
+.footer-container {
+  border-top: 1px solid #ccc;
+  margin: 2rem 0 1rem;
+}
+
+.logo {
+  margin-left: 20px;
+}
+
+.log__in {
+  width: 150px;
+  color: #fff;
+  cursor: pointer;
+  background: green;
+  border: 0;
+  align-self: center;
+  margin-right: 20px;
+  padding: 1rem 2rem;
+  font-size: 16px;
+}
+
+.log__out {
+  width: 150px;
+  color: #fff;
+  cursor: pointer;
+  background: red;
+  border: 0;
+  align-self: center;
+  margin-right: 20px;
+  padding: 1rem 2rem;
+  font-size: 16px;
+}
+
+.nav-items {
+  align-items: center;
+  margin-right: 20px;
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-items > li {
+  color: #000;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.nav-items > li a {
+  color: #333;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.nav-items > li a.active {
+  color: #fff;
+  background-color: #333;
+}
+
+.total__count {
+  max-width: 1200px;
+  margin-block-end: 2rem;
+  margin-inline: auto;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.shimmer {
+  width: 1200px;
+  flex-flow: wrap;
+  gap: 1rem;
+  display: flex;
+}
+
+.shimmer__card {
+  border: 1px solid #eee;
+  flex-direction: column;
+  flex: 0 0 calc(25% - 1rem);
+  gap: .5rem;
+  padding: .5rem;
+  display: flex;
+}
+
+.shimmer__img {
+  height: 100px;
+  background-color: #eee;
+}
+
+.shimmer-one {
+  height: 10px;
+  max-width: 40%;
+  background-color: #eee;
+}
+
+.shimmer-two {
+  height: 10px;
+  max-width: 80%;
+  background-color: #eee;
+}
+
+.menu {
+  display: flex;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Be Vietnam Pro, sans-serif;
+}
+
+.names {
+  word-wrap: initial;
+  font-size: 22px;
+}
+
+.categories {
+  color: gray;
+  font-size: 15px;
+}
+
+.header__block {
+  flex-direction: column;
+  gap: .8rem;
+  display: flex;
+}
+
+.header__block > p {
+  color: #ccc;
+}
+
+.info__block {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  display: flex;
+}
+
+.restaurant-info-container {
+  color: gray;
+  justify-content: space-between;
+  margin-top: auto;
+  font-family: Dialog, serif;
+  font-size: 15px;
+  display: flex;
+}
+
+.ratings {
+  color: #fff;
+  background-color: green;
+  border-radius: 4px;
+  margin-right: 3px;
+  padding: 3px;
+}
+
+.separator {
+  padding: 3px;
+}
+
+.eta {
+  margin-left: 3px;
+  margin-right: 3px;
+  padding: 3px;
+}
+
+.estimated-cost {
+  margin-left: 3px;
+  padding: 3px;
+}
+
+.search-container {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin-inline: auto;
+}
+
+.search-container input[type="text"] {
+  width: 50rem;
+  height: 3.5rem;
+  color: #999;
+  text-transform: capitalize;
+  border: 1px solid #fff;
+  margin-block: 2rem;
+  padding: 1rem;
+  font-size: 16px;
+  box-shadow: 0 2px 1px #7c7c7c;
+}
+
+.search-container input[type="text"]:focus {
+  outline: 0;
+}
+
+.search__btn {
+  color: #fff;
+  cursor: pointer;
+  background-color: #333;
+  padding: 9px 40px 11px;
+  font-size: 16px;
+}
+
+.restaurant-list-container {
+  width: 1200px;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-inline: auto;
+  display: flex;
+}
+
+.about {
+  flex-flow: column;
+  margin-top: 3rem;
+}
+
+.restaurant-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex-flow: column;
+  flex: 0 0 calc(25% - 1rem);
+  gap: .5rem;
+  padding: 15px;
+  display: flex;
+}
+
+.restaurant-container > a > img {
+  max-width: 100%;
+}
+
+.names {
+  word-wrap: initial;
+  font-size: 22px;
+}
+
+.categories {
+  color: gray;
+  font-size: 15px;
+}
+
+.restaurant-info-container {
+  color: gray;
+  justify-content: space-between;
+  margin-top: auto;
+  font-family: Dialog, serif;
+  font-size: 14px;
+  display: flex;
+}
+
+.ratings {
+  color: #fff;
+  background-color: green;
+  border-radius: 4px;
+  margin-right: 3px;
+  padding: 3px;
+}
+
+.separator {
+  padding: 3px;
+}
+
+.eta {
+  margin-left: 3px;
+  margin-right: 3px;
+  padding: 3px;
+}
+
+.estimated-cost {
+  margin-left: 3px;
+  padding: 3px;
+}
+
+.top__header {
+  width: 100%;
+  background-color: #171a29;
+  padding: 1.5rem;
+}
+
+.top__header > img {
+  height: 165px;
+}
+
+.top__header .inner__header {
+  width: 1200px;
+  color: #fff;
+  gap: 2rem;
+  margin-inline: auto;
+  display: flex;
+}
+
+.inner__header img {
+  height: 165px;
+}
+
+.body__section {
+  gap: 2rem;
+  display: flex;
+}
+
+.menu__category {
+  border-right: 1px solid #ccc;
+  flex: 0 0 235px;
+  justify-content: flex-end;
+  padding-block: 2rem;
+}
+
+.menu__category ul {
+  list-style-type: none;
+}
+
+.menu__category ul li {
+  text-align: right;
+  margin-block: .4rem;
+}
+
+.menu__category ul li + li {
+  margin-top: 0;
+}
+
+.menu__category ul li a {
+  color: #282c3f;
+  padding: .2rem 2rem 0 0;
+  font-size: 13px;
+  text-decoration: none;
+  display: block;
+}
+
+.menu__category ul li a:hover {
+  color: #fc8019;
+}
+
+.menu__seller span {
+  color: #ee9c00;
+  font-size: .8rem;
+  font-weight: bold;
+  line-height: 1.15rem;
+  display: inline-block;
+}
+
+.total__counts {
+  color: #666;
+  font-size: 12px;
+}
+
+.icon-star:before {
+  content: "★";
+}
+
+.menu__section {
+  width: 650px;
+  padding-block: 2rem;
+}
+
+.menu__record {
+  border-bottom: 1px solid #ccc;
+  gap: 1rem;
+  padding-block: 20px;
+  display: flex;
+}
+
+.menu__heading {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.menu__detail {
+  flex-direction: column;
+  flex: 1;
+  gap: .3rem;
+  display: flex;
+}
+
+.rupee:before {
+  content: "₹";
+  margin-right: .1rem;
+}
+
+.menu__name {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.menu__price {
+  color: #3e4152;
+  font-size: .8rem;
+  font-weight: 400;
+}
+
+.menu__description {
+  color: #282c3f73;
+  letter-spacing: -.3px;
+  font-size: .7rem;
+  line-height: 1.3;
+}
+
+.menu_img {
+  width: 118px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=index.ab12f813.css.map */

@@ -1,0 +1,274 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.names {
+   
+    font-size: 22px;
+    word-wrap: initial;
+}
+
+.categories {
+    font-size: 15px;
+    color: grey;
+}
+.header__block{
+    display:flex;
+    flex-direction: column;
+    gap:.8rem;
+}
+.header__block > p{
+    color:#ccc;
+}
+
+.info__block{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+.restaurant-info-container {
+    display: flex;
+    justify-content: space-between;
+    font-family: Dialog, serif;
+    font-size: 15px;
+    color: grey;
+    margin-top: 15px;
+    margin-top:auto;
+}
+
+.ratings {
+    padding: 3px;
+    margin-right: 3px;
+    color: white;
+    background-color: green;
+    border-radius: 4px;
+}
+
+.separator {
+    padding: 3px;
+}
+
+.eta {
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 3px;
+}
+
+.estimated-cost {
+    padding: 3px;
+    margin-left: 3px;
+}
+
+.search-container{
+    margin-inline: auto;
+    max-width: fit-content;
+}
+.search-container input[type="text"]{
+    width: 50rem;
+    height: 3.5rem;
+    color: rgb(153, 153, 153);
+    border: 1px solid #fff;
+    margin-block: 2rem;
+    padding: 1rem;
+    box-shadow: rgb(124 124 124) 0px 2px 1px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.search-container input[type="text"]:focus{
+    outline: 0px; 
+}
+.search__btn{
+    background-color: #333;
+    color:#fff;
+    padding:9px 40px 11px 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.restaurant-list-container {
+    width: 1200px;
+    flex-wrap: wrap;
+    margin-inline: auto;
+    display: flex;
+    gap:1rem;
+}
+.about{
+    flex-flow: column;
+    margin-top: 3rem;
+}
+
+.restaurant-container{
+    border-radius: 5px;
+    padding: 15px;
+    border: 1px solid #ccc;
+
+    flex:0 0 calc(25% - 1rem);
+    display: flex;
+    flex-flow: column;
+    gap: 0.5rem; 
+}
+.restaurant-container > a > img {
+    max-width: 100%;
+}
+.names {
+    font-size: 22px;
+    word-wrap: initial;
+}
+
+.categories {
+    font-size: 15px;
+    color: grey;
+}
+
+.restaurant-info-container {
+    display: flex;
+    justify-content: space-between;
+    font-family: Dialog, serif;
+    font-size: 14px;
+    color: grey;
+    margin-top: auto;
+}
+
+.ratings {
+    padding: 3px;
+    margin-right: 3px;
+    color: white;
+    background-color: green;
+    border-radius: 4px;
+}
+
+.separator {
+    padding: 3px;
+}
+
+.eta {
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 3px;
+}
+
+.estimated-cost {
+    padding: 3px;
+    margin-left: 3px;
+}
+
+/*RESTAURAN DETAIL PAGE*/
+.top__header{
+    width:100%;
+    background-color:#171a29;
+    padding:1.5rem;
+}
+.top__header > img{
+    height:165px;
+}
+.top__header .inner__header{
+    width:1200px;
+    margin-inline: auto;
+    display: flex;
+    gap:2rem;
+    color:#fff;
+}
+.inner__header img{
+    height: 165px;
+}
+/*[RESTAURANT MENU PAGE CSS START]*/
+.body__section{
+    display: flex;
+    gap:2rem;
+}
+.menu__category{
+    flex:0 0 235px;
+    justify-content: flex-end;
+    border-right:1px solid #ccc;
+    padding-block:2rem;
+}
+.menu__category ul{
+    list-style-type: none;
+}
+.menu__category ul li{
+    text-align: right;
+    margin-block:.4rem;
+}
+.menu__category ul li + li{
+    margin-top:0;
+}
+.menu__category ul li a{
+    text-decoration: none;
+    font-size:13px;
+    color:#282c3f;
+    display:block;
+    padding:.2rem 2rem 0 0;
+}
+.menu__category ul li a:hover{
+    color:#fc8019;
+}
+.menu__seller span{
+    display: inline-block;
+    line-height: 1.15rem;
+    font-size:.8rem;
+    color: #ee9c00;
+    font-weight:bold;
+}
+.total__counts{
+    font-size:12px;
+    color: #666;
+}
+.icon-star:before {
+    content: "\2605";
+}
+.menu__section{
+    width:650px;
+    padding-block: 2rem;
+    
+}
+.menu__record{
+    display:flex;
+    gap: 1rem;
+    padding-block: 20px;
+    border-bottom:1px solid #ccc;
+}
+.menu__heading{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.menu__detail{
+    display: flex;
+    flex-direction: column;
+    gap:.3rem;
+    flex:1;
+}
+.rupee:before {
+    content: "\20B9";
+    margin-right: 0.1rem;
+}
+.menu__name{
+    font-size: 14px;
+    font-weight: 500;
+}
+.menu__price{
+    font-weight: 400;
+    color: #3e4152;
+    font-size: .8rem;
+}
+.menu__description{
+    line-height: 1.3;
+    color: rgba(40,44,63,.45);
+    letter-spacing: -.3px;
+    font-size:.7rem;
+}
+
+
+.menu_img{
+    width: 118px;
+    height: 96px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+/*[RESTAURANT MENU PAGE CSS END]*/

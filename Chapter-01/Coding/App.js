@@ -1,39 +1,63 @@
 import React from "react";
-import ReactDOM from "react-dom/client" 
+import ReactDOM from "react-dom/client";
+import Header from "./component/Header";
+import Body from "./component/Body";
+import About from "./component/About";
+import Error from "./component/Error";
+import { createBrowserRouter,RouterProvider,Outlet } from "react-router-dom";
+import Contact from "./component/Contact";
+import Footer from "./component/Footer";
+import RestaurantMenu from "./component/RestaurantMenu";
 
-// Manipulate the HTML DOM using Javscript
-// const heading = document.createElement("h1");
-// heading.innerHTML = "Namaste Everyone";
-// const root = document.getElementById("root");
-// root.appendChild(heading);
+const AppLayout = () => {
+    return (
+        <div>
+            <Header />
+           <Outlet />
+           <Footer/>
+        </div>
+    )
+}
+const appRouter = createBrowserRouter([
+    {
+    path: "/",
+    element: <AppLayout/>,
+    errorElement: <Error />,
+    children: [
+        {
+            path: "/",  //children of app layout [to call HEADER AND FOOTER]
+            element: <Body />,
+        },
+    {
+        path: "/about", 
+        element: <About />,
+    },
+    {
+        path: "/contact",
+        element: <Contact />,
+    },
+    {
+        path: "/restaurant/:id",
+        element: <RestaurantMenu />,
+    },
+    {
+        path: "/restaurant/:id",
+        element: <RestaurantMenu />,
+    },
+    ]
+    },
+    {
+        path: "/about",
+        element: <About/>,
+    },
+    {
+        path: "/contact",
+        element: <Contact/>,
+    },
+    
+])
 
-// Manipulate the HTML DOM using React
 
-// Create nested React Elements
-const heading = React.createElement(
-    "h1",
-    {
-      id: "title",
-    },
-    "heading"
-  );
-  const heading1 = React.createElement(
-    "h1",
-    {
-      id: "title",
-    },
-    "heading1"
-  );
-  
-  const container = React.createElement(
-    "div",
-    {
-      id: "container",
-    },
-    [heading, heading1]
-  );
-  
-  // create root using createRoot
-  const root = ReactDOM.createRoot(document.getElementById("root"));
-  // passing react element inside root
-  root.render(container);
+const root = ReactDOM.createRoot(document.getElementById('root'))
+
+root.render(<RouterProvider  router={appRouter} />);
