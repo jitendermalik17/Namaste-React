@@ -2,15 +2,14 @@
   "name": "coding",
   "version": "1.0.0",
   "description": "Namaste React",
-  "main": "app.js",
   "scripts": {
+    "test": "jest",
     "start": "parcel index.html",
-    "build": "parcel build index.html",
-    "test": "jest"
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
-    "url": "y"
+    "url": "https://github.com/jitendermalik17"
   },
   "author": "Jitender Malik",
   "license": "ISC",
@@ -23,6 +22,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "parcel": "^2.8.2",
     "process": "^0.11.10"
   }
 }

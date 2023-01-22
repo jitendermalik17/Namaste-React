@@ -35,7 +35,7 @@ const navObj = [{
         <div className="header-container">
             <img src={logo} alt="logo" height={120} width={120} className="logo"/>
             <ul className='nav-items'>
-            {navObj.map(curNav => <li><Link className={active === curNav.id ? "active" : "a"} to={curNav.url} onClick={()=> setActive(curNav.id)}>{curNav.navName}</Link></li>)}
+            {navObj.map(curNav => <li key={curNav.id}><Link className={active === curNav.id ? "active" : "a"} to={curNav.url} onClick={()=> setActive(curNav.id)}>{curNav.navName}</Link></li>)}
             <li><button className={isLoggedIn ? "log__out" : "log__in"} onClick={()=> setIsLoggedIn(!isLoggedIn)}>{isLoggedIn ? "Log Out" : "Log In"}</button></li>
             </ul>
         

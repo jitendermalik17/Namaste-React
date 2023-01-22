@@ -8,6 +8,7 @@ import { createBrowserRouter,RouterProvider,Outlet } from "react-router-dom";
 import Contact from "./component/Contact";
 import Footer from "./component/Footer";
 import RestaurantMenu from "./component/RestaurantMenu";
+import { Profile } from "./component/Profile";
 
 const AppLayout = () => {
     return (
@@ -23,22 +24,21 @@ const appRouter = createBrowserRouter([
     path: "/",
     element: <AppLayout/>,
     errorElement: <Error />,
-    children: [
-        {
-            path: "/",  //children of app layout [to call HEADER AND FOOTER]
+    children: [{
+            path: "/",  
             element: <Body />,
         },
     {
-        path: "/about", 
+        path: "about", 
         element: <About />,
+        children: [{
+            path:"profile",
+            element: <Profile />,
+        }]
     },
     {
         path: "/contact",
         element: <Contact />,
-    },
-    {
-        path: "/restaurant/:id",
-        element: <RestaurantMenu />,
     },
     {
         path: "/restaurant/:id",
