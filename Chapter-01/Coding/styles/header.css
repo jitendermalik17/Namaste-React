@@ -1,11 +1,9 @@
 .header-container {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid black;
     border-radius: 5px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
+    align-items:center;
 }
 .footer-links{
     max-width:30rem;
@@ -86,7 +84,7 @@
     .shimmer__card{
     border: 1px solid #eee;
     padding:.5rem;
-    flex: 0 0 calc(25% - 1rem);
+    flex: 0 0 calc(33.3% - 1rem);
     display:flex;
     flex-direction:column;
     gap:.5rem;

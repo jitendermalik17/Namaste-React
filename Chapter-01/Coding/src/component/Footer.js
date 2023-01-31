@@ -1,6 +1,8 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import userContext from '../utils/UserContext'
 
 const Footer = () => {
+  const {user} = useContext(userContext);
   return (
     <>
     <div className="footer-container">
@@ -9,6 +11,7 @@ const Footer = () => {
       <li>About Us</li>
       <li>Contact Us</li>
       <li>Feedback</li>
+      <li>{user.email}</li>
       </ul>
     </div>
     </>

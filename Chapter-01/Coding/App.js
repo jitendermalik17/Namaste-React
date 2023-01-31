@@ -1,23 +1,52 @@
-import React from "react";
+import React, { lazy, Suspense , useState} from "react";
 import ReactDOM from "react-dom/client";
-import Header from "./component/Header";
-import Body from "./component/Body";
-import About from "./component/About";
-import Error from "./component/Error";
+import Header from "./src/component/Header";
+import Body from "./src/component/Body";
+import Error from "./src/component/Error";
 import { createBrowserRouter,RouterProvider,Outlet } from "react-router-dom";
-import Contact from "./component/Contact";
-import Footer from "./component/Footer";
-import RestaurantMenu from "./component/RestaurantMenu";
-import { Profile } from "./component/Profile";
+import Contact from "./src/component/Contact";
+import Footer from "./src/component/Footer";
+import RestaurantMenu from "./src/component/RestaurantMenu";
+import Profile  from "./src/component/Profile";
+import Shimmer from "./src/component/Shimmer";
+import UserContext from "./src/utils/UserContext";
+
+//it is A Dynamic Import
+const About = lazy(()=> import("./src/component/About"));
+const Instamart = lazy(() => import("./src/component/Instamart")); //it takes a function
+//upon on demmand loading  ---> upon render ---->  suspend loading [bcause code is not there]
+
+//import About from "./component/About";
+//import Instamart from "./component/Instamart";
+
+
+//chunking
+//Code Spiliting
+//Dynamic Bundling
+//Lazy Loading
+//on Demand Loading
+//Dynamic Import
+
+
 
 const AppLayout = () => {
+ const [user, setUser] = useState({
+    name : "Jitender Malik",
+    email: "jitendermalik17@gmail.com",
+ });
+ 
     return (
         <div>
+        <UserContext.Provider value={{
+            user: user,
+            setUser: setUser,
+        }}>
             <Header />
            <Outlet />
            <Footer/>
+        </UserContext.Provider>
         </div>
-    )
+    );
 }
 const appRouter = createBrowserRouter([
     {
@@ -30,7 +59,9 @@ const appRouter = createBrowserRouter([
         },
     {
         path: "about", 
-        element: <About />,
+        element: <Suspense fallback={<h1>Loading...</h1>}>
+        <About />
+        </Suspense>,
         children: [{
             path:"profile",
             element: <Profile />,
@@ -44,6 +75,13 @@ const appRouter = createBrowserRouter([
         path: "/restaurant/:id",
         element: <RestaurantMenu />,
     },
+    {
+        path: "instamart",
+        element: <Suspense fallback={<Shimmer />}>
+        <Instamart />
+        </Suspense>,
+    }
+
     ]
     },
     {

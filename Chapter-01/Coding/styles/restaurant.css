@@ -83,11 +83,12 @@
     outline: 0px; 
 }
 .search__btn{
-    background-color: #333;
+    background-color: #999;
     color:#fff;
-    padding:9px 40px 11px 40px;
+    padding:18px 40px;
     font-size: 16px;
     cursor: pointer;
+    border: 0;
 }
 
 
@@ -106,15 +107,13 @@
 .restaurant-container{
     border-radius: 5px;
     padding: 15px;
-    border: 1px solid #ccc;
-
-    flex:0 0 calc(25% - 1rem);
+    flex:0 0 calc(33.3% - 1rem);
     display: flex;
     flex-flow: column;
     gap: 0.5rem; 
 }
 .restaurant-container > a > img {
-    max-width: 100%;
+   width: 100%;
 }
 .names {
     font-size: 22px;

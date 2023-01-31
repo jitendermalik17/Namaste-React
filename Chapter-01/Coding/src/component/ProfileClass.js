@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 
-class Profile extends Component{
+class ProfileClass extends Component{
 constructor(props){
     super(props);
     //CREATE STATE
@@ -14,7 +14,7 @@ constructor(props){
 }
 async componentDidMount(){ //ASYNC OPERATION WILL SHOW RESULT AFTER ALL CONSOLE AND RESULTS
    this.timer = setInterval(()=>{
-        console.log("Namaste React OP");
+    console.log("Namaste React OP");
     },1000)
     // const data = await fetch("https://api.github.com/users/jitendermalik17");
     // const json = await data.json();
@@ -59,4 +59,4 @@ componentWillUnmount(){
         )
     }
 }
-export {Profile};
+export {ProfileClass};
