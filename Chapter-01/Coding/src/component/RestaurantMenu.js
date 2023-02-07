@@ -6,13 +6,20 @@ import veg from '../assets/veg.jpg'
 import nonveg from '../assets/nonveg.png'
 import Shimmer from './Shimmer';
 import useRestaurant from '../utils/useRestaurant';
+import { useDispatch } from 'react-redux';
+import { addItems } from '../utils/cartSlice';
 
 const RestaurantMenu = () => {
     const [filterVal, setFilterVal] = useState([]);
     //const [resDetail, setResDetail] = useState();
     const {id} = useParams();
-    const resDetail = useRestaurant(id);
 
+    const resDetail = useRestaurant(id);
+    const dispatch = useDispatch();
+ 
+    const addFoodItem = (item) =>{
+        dispatch(addItems(item));
+    }
     const filterCat = (val) => {
         const result = Object.values(resDetail?.menu?.items).filter(cur => cur.category === val);
         setFilterVal(result);
@@ -64,8 +71,9 @@ const RestaurantMenu = () => {
             
             <p className="menu__description">{curIt.description}</p>
             </div>
-            <div>
+            <div  className="flex flex-col items-center">
             <img src= { curIt?.cloudinaryImageId  ? IMG_CDN + curIt?.cloudinaryImageId : def } alt="" className="menu_img" />
+            <div><Link to="" className='bg-green-500 text-white px-2 py-1 hover:bg-green-600 text-sm'  onClick={()=> addFoodItem(curIt)}>Add Items</Link></div>
             </div> 
         </div>
             </>
@@ -86,9 +94,9 @@ const RestaurantMenu = () => {
                 
                 <p className="menu__description">{curItem.description}</p>
                 </div>
-                <div>
+                <div className="flex flex-col items-center">
                 <img src= { curItem?.cloudinaryImageId  ? IMG_CDN + curItem?.cloudinaryImageId : def } alt="" className="menu_img" />
-                
+                <div><button to="" className='bg-green-500 text-white px-2 py-1 hover:bg-green-600 text-sm' onClick={()=> addFoodItem(curItem)}>Add Items</button></div>
                 </div> 
                 
             </div>
